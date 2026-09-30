@@ -1,2 +1,8 @@
-what is recursion?
-When a function calls itself again and again until a specified condition is met.
+RECURSION?
+When a function calls itself(again and again), until a specified condition is met.
+If the condition is never met, the functions is kept on calling again and again until the program runs out of memory i.e Stack Overflow is met.
+This is exactly when segmentation fault is met.
+
+Which is why we never write infinite recursion statements because we eventually run out of memory and encounter Stack Overflow.
+
+RECURSION TREE
