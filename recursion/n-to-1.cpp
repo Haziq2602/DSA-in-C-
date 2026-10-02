@@ -7,8 +7,7 @@ int print1(int n){
     }
     else{
         cout << n << " ";
-        n--;
-        print1(n);
+        print1(n-1);
     }
 }
 

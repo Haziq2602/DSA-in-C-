@@ -1,25 +1,26 @@
 #include<iostream>
 using namespace std;
 
-string name = "Rikazike";
-int count = 0;
 
-void fiveTimes(){
-    if(count == 5){
+//Time Complexity: O(n)
+//Space Complexity: O(n)
+void fiveTimes(int count, int n){
+    if(count == n){
         return;
     }
     else{
-        cout << name << endl;
+        cout << "Rikazike" << endl;
         count++;
-        fiveTimes();
+        fiveTimes(count, n);
     }
 }
 
 
 int main(){
 
-    
-    fiveTimes();
+    int n, count = 0;
+    cin >> n;
+    fiveTimes(count, n);
 
     return 0;
 }
