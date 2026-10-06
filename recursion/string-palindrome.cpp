@@ -13,9 +13,14 @@ bool palindromeOrNot(string word, int i, int n){
 
 int main(){
     
-    string word = "haziqq";
+    string word;
+    cin >> word;
     bool result = palindromeOrNot(word, 0, word.length());
-    cout << result;
+    if(result == 1){
+        cout << word << " is a palindrome.";
+    }
+    else cout << word << " is not a palindrome.";
+
     // cout << word.length();
 
 
