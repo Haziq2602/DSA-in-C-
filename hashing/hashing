@@ -1,0 +1,6 @@
+hashing is basically using a hash array to count the number of occurences of a number in a given array.
+for example if there exists an array = [1,2,2,3,4,4,5]
+we declare a new hash array and initialise all of its value as 0 and it's size would be (maximum number + 1),
+becuase we need to count the number of occurences of the maimum number as well.
+once we have the array and a hash array, we can simply go through the array using a loop and increment hash[arr[i]] by 1.
+(What this does is whenever the number is met in the array we simply increase the value stored in that number's position in the hash array by 1)

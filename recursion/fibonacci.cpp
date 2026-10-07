@@ -14,7 +14,5 @@ int main(){
     int n = 10;
     cout << fibonacci(n);
 
-
-
     return 0;
 }
