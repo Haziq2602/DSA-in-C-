@@ -4,3 +4,21 @@ we declare a new hash array and initialise all of its value as 0 and it's size w
 becuase we need to count the number of occurences of the maimum number as well.
 once we have the array and a hash array, we can simply go through the array using a loop and increment hash[arr[i]] by 1.
 (What this does is whenever the number is met in the array we simply increase the value stored in that number's position in the hash array by 1)
+
+## For string hashing we use ASCII Codes to represent the alphabbet's hash array in terms of numbers
+There are a total of 256 ASCII codes where small a starts from 97
+
+if we're considering all 256 ascii codes we simply create a hash array of size 256
+but if we're considering only the small alphabets then we create a hash array of size 26 and to find the position of the small alphabet in it's hash array we simply subtract a from the encountered alphabet in the string.
+for example,
+  string s = "abcdefa"
+  element is a
+  so a = 97
+  therefore a - a = 97 - 97 = 0
+  so we increment 0th position by number of times the alphabet is occured in the string.
+
+another example,
+  f = 102, a = 97
+  f - a = 102 - 97 = 5
+  so we increment hash[5] by number of times the alphabet is occured in the string.  
+
